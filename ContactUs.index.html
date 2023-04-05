@@ -12,12 +12,12 @@
         <div class="container-osnovnoi">
             <div class="main-up">
                 <div class="main-up-one">
-                    <img src="/img/phone.png" alt="" class="phone-mainlogo" width="100%">
+                    <img src="img/phone.png" alt="" class="phone-mainlogo" width="100%">
                     <div class="number-phone">+7 (925) 854-84-41<br><span class="Pn-Pt">Пн-Пт 10-18, Сб-Вс выходные</span></div>
                 </div>
                 <div class="main-up-citata">«Независимо от пола всегда надо быть хотя бы выше плинтуса»</div>
                 <div class="main-up-second">
-                    <img src="/img/geolok (2).png" alt="" class="geolok-mainlogo" width="2%">
+                    <img src="img/geolok (2).png" alt="" class="geolok-mainlogo" width="2%">
                     <div class="ur-adress">Москва<br> Шаболовка 42/2</div>
                 </div>
             </div>
@@ -66,27 +66,6 @@
     closePopUp.addEventListener('click', () => {
         popUp.classList.remove('active');
     })
-</script>
-<script>
-    let checkbox = document.querySelector('.theme-checkbox')
-
-    
-    if(localStorage.getItem('theme') == "true") {
-        theme.setAttribute('href', '../css/dark.css')
-        checkbox.checked = true
-    }
-
-    checkbox.onchange = function() {
-        if(this.checked) {
-            localStorage.setItem('theme', true)
-            theme.setAttribute('href', '../css/dark.css')
-            
-        } else {
-            localStorage.setItem('theme', false)
-            theme.setAttribute('href', '../css/light.css')
-            
-        }
-    }
 </script>
 </body>
 </html>
